@@ -1,0 +1,22 @@
+[main]
+cache_dir = "/var/cache/rust-dnf"
+install_root = "/"
+database_dir = "/var/lib/rust-dnf"
+releasever = "39"
+basearch = "x86_64"
+
+[[repositories.fedora]]
+name = "fedora"
+url = "https://download.fedoraproject.org/pub/fedora/linux/releases/39/Everything/x86_64/os/"
+enabled = true
+gpg_check = true
+gpg_key = "/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-x86_64"
+metadata_sig = true
+
+[[repositories.updates]]
+name = "updates" 
+url = "https://download.fedoraproject.org/pub/fedora/linux/updates/39/Everything/x86_64/"
+enabled = true
+gpg_check = true
+gpg_key = "/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-x86_64"
+metadata_sig = true
